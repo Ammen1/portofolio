@@ -36,7 +36,7 @@ export default function OAuth() {
   return (
     <Button
       type="button"
-      gradientDuoTone="orangeTopink"
+      gradientDuoTone="pinkToOrange"
       outline
       onClick={handleGoogleClick}
     >
