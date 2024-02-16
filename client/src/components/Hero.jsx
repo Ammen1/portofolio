@@ -13,7 +13,7 @@ const Hero = () => {
           data-aos-delay="1200"
           className="h-full md:w-1/2 w-full md:order-2 order-1 right-0 bottom-0 top-5 dark:bg-gray-900 bg-neutral-100"
         >
-          <div className="gap-12 space-y-8">
+          <div className="gap-12 space-y-">
             <h1 className="rotate-90 mb-6 md:mb-56 top-[10%] right-[15%] text-2xl md:text-3xl lg:text-4xl font-extrabold">
               {hero.firstName}{" "}
               <span className="dark:text-white px-2 py-1 bg-gradient-to-r from-amber-700 via-purple-800 to-pink-700 rounded-lg text-white">
@@ -45,10 +45,10 @@ const Hero = () => {
             {hero.title}
           </h2>
           <br />
-          <div className=" h-24 flex-col justify-end sm:block hidden bg-gradient-to-r from-amber-700 via-purple-800 to-pink-700">
+          <div className=" h-12 flex-col justify-end sm:block hidden bg-gradient-to-r from-amber-600 via-purple-500 to-pink-500">
             <Button
               gradientDuoTone="purpleToPink"
-              className="p-4 md:p-5 px-6 md:px-9  ml-44 animate-bounce"
+              className="p-2 md:p-2 px-6 md:px-4  ml-44 animate-bounce"
             >
               {hero.btnText}
             </Button>
