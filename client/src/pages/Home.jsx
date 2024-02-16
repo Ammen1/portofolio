@@ -4,6 +4,7 @@ import { useEffect, useState } from "react";
 import PostCard from "../components/PostCard";
 import Hero from "../components/Hero";
 import Contact from "./Contact";
+import Navbar from "./Navbar";
 
 export default function Home() {
   const [posts, setPosts] = useState([]);
@@ -30,6 +31,7 @@ export default function Home() {
         <CallToAction />
       </div>
       <Contact />
+      <Navbar />
 
       <div className="max-w-6xl mx-auto p-3 flex flex-col gap-8 py-7">
         {posts && posts.length > 0 && (
