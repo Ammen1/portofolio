@@ -35,7 +35,7 @@ const Skills = () => {
   }
 
   return (
-    <section className="min-h-fit bg-bg_light_primary" id="skills">
+    <section className="min-h-fit" id="skills">
       {/* modal */}
       <Modal
         isOpen={modalIsOpen}
@@ -70,7 +70,9 @@ const Skills = () => {
       {/* content */}
       <div className="md:container px-5  py-14">
         <h2 className="title" data-aos="fade-down">
-          {skills.title}
+          <span className="px-2 py-1 bg-gradient-to-r from-indigo-700  via-orange-800 to-orange-500 rounded-lg text-white">
+            {skills.title}
+          </span>
         </h2>
         <h4 className="subtitle" data-aos="fade-down">
           {skills.subtitle}
@@ -94,7 +96,7 @@ const Skills = () => {
                 />
               </div>
               <div>
-                <h6>{skill.name}</h6>
+                <h6 className=" text-xl">{skill.name}</h6>
                 <p className="italic">{skill.para}</p>
                 <div
                   onClick={() => {

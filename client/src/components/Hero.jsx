@@ -11,9 +11,9 @@ const Hero = () => {
         <div
           data-aos="slide-left"
           data-aos-delay="1200"
-          className="h-full md:w-1/2 w-full md:order-2 order-1 right-0 bottom-0 top-5 dark:bg-gray-900 bg-neutral-100"
+          className="h-full md:w-1/2 w-full md:order-2 order-1 right-0 bottom-0 top-5 dark:bg-[#06223F]  dark:bg-gradient-to-r from-teal-700 via-purple-900 to-orange-900 dark:hover:bg-gradient-to-tl border-y-green-900 transition-all duration-1000  bg-neutral-200"
         >
-          <div className="gap-12 space-y-">
+          <div className="gap-6">
             <h1 className="rotate-90 mb-6 md:mb-56 top-[10%] right-[15%] text-2xl md:text-3xl lg:text-4xl font-extrabold">
               {hero.firstName}{" "}
               <span className="dark:text-white px-2 py-1 bg-gradient-to-r from-amber-700 via-purple-800 to-pink-700 rounded-lg text-white">

@@ -70,7 +70,7 @@ export default function SignUp() {
               <Label value="Your email" />
               <TextInput
                 type="email"
-                placeholder="name@company.com"
+                placeholder="amenguda@.com"
                 id="email"
                 onChange={handleChange}
               />

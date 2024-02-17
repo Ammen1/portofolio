@@ -21,7 +21,7 @@ const Navbar = () => {
         <HiPhone size={20} />
       </div>
       <nav
-        className={`fixed z-[999] flex flex-col items-center gap-5 lg:px-10 px-6 py-10  backdrop-blur-md bg-gradient-to-tl bg-white/20 duration-300 ${
+        className={`fixed z-[999] flex flex-col items-center gap-5 lg:px-10 px-6 py-14  backdrop-blur-md bg-gradient-to-tl bg-white/20 duration-300 ${
           showMenu ? "bottom-10" : "bottom-[100%]"
         } md:flex-row md:gap-10 md:py-0`}
       >
@@ -30,6 +30,8 @@ const Navbar = () => {
             key={i}
             href={item.link}
             onClick={() => setActive(i)}
+            target="_blank"
+            rel="noopener noreferrer"
             className={`text-xl p-3 rounded-full sm:cursor-pointer lg:text-3xl ${
               i === active && "text-white"
             }`}
