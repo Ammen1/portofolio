@@ -48,7 +48,7 @@ const Skills = () => {
         </div>
         <br />
         <p className="list-decimal px-4 font-Poppins sm:text-sm text-2xl !leading-7 text-white bg-gradient-to-r from-amber-950 to-emerald-900 via-orange-900">
-          {skills.title}
+          this is no thing for now i wil fix it other day
         </p>
         <br />
         <div className="flex justify-end">

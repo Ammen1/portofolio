@@ -13,9 +13,9 @@ const Navbar = () => {
   };
 
   return (
-    <div className="w-full flex justify-center">
+    <div className="w-full flex justify-center ">
       <div
-        className="sm:cursor-pointer bg-slate-300  dark:white border-fuchsia-800  fixed rounded-s-full lg:top-72 right-6 md:top-10 md:right-10 lg:right-0 xl:right-0 border-t-2 border-b-2  hover:shadow-slate-50 shadow-slate-300  dark:bg-slate-900 p-2  "
+        className="sm:cursor-pointer bg-slate-300 dark:white border-fuchsia-800  fixed rounded-s-full lg:top-72 right-6 md:top-10 md:right-10 lg:right-0 xl:right-0 border-t-2 border-b-2 dark:bg-slate-900 p-2  "
         onClick={toggleMenu}
       >
         <HiPhone size={20} />
@@ -32,7 +32,7 @@ const Navbar = () => {
             onClick={() => setActive(i)}
             target="_blank"
             rel="noopener noreferrer"
-            className={`text-xl p-3 rounded-full sm:cursor-pointer lg:text-3xl ${
+            className={`text-xl p-3 rounded-full sm:cursor-pointer lg:text-3xl  ${
               i === active && "text-white"
             }`}
           >
