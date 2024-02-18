@@ -41,7 +41,7 @@ const ImageSlider = () => {
     right1: { x: "50%", scale: 0.7, zIndex: 3 },
   };
   return (
-    <div className="flex items-center flex-col justify-center dark:bg-black h-screen">
+    <div className="flex items-center flex-col  justify-center dark:bg-black">
       <h2 className="text-3xl font-bold text-center mb-4  dark:text-white">
         Explore My Projects
       </h2>
@@ -50,7 +50,7 @@ const ImageSlider = () => {
           key={index}
           src={image}
           alt={image}
-          className="rounded-[12px] w-full max-w-[500px] mx-auto absolute"
+          className="rounded-[12px] w-full max-w-[500px] mx-auto absolute   "
           initial="center"
           animate={positions[positionIndexes[index]]}
           variants={imageVariants}

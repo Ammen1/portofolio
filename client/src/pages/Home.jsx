@@ -35,7 +35,9 @@ export default function Home() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
         >
-          <ImageSlider />
+          <div className="sm:block hidden">
+            <ImageSlider />
+          </div>
         </motion.div>
       )}
       <div className="max-w-6xl mx-auto p-3 flex flex-col gap-8">
@@ -69,6 +71,10 @@ export default function Home() {
       </div>
       <div className="p-3 bg-[#182b42]">
         <Contact />
+      </div>
+
+      <div>
+        <div className="absolute z-[999] w-[30%] h-[30%]  dark:bg-gradient-to-r from-indigo-700  to-violet-800 via-sky-700  rounded-full  blue__gradient bottom-20  " />
       </div>
       <Navbar />
     </div>

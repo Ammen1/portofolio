@@ -5,24 +5,26 @@ const Hero = () => {
   const { hero } = content;
 
   return (
-    <section className="w-full min-h-screen">
-      <div className="min-h-screen relative flex md:flex-row flex-col-reverse md:items-end justify-center items-center">
+    <section className=" overflow-hidden">
+      <div className="min-h-screen relative animate-pulse flex md:flex-row flex-col-reverse md:items-end justify-center items-center">
         {/* First Column */}
         <div
           data-aos="slide-left"
           data-aos-delay="1200"
-          className="h-full md:w-1/2 w-full md:order-2 order-1 right-0 bottom-0 top-5 dark:bg-[#06223F]  dark:bg-gradient-to-r from-teal-700 via-purple-900 to-orange-900 dark:hover:bg-gradient-to-tl border-y-green-900 transition-all duration-1000  bg-neutral-200"
+          className="absolute h-full animate-pulse md:w-4/12 w-8/12 top-0 right-0 dark:bg-gradient-to-tr from-indigo-800  to-violet-800 via-sky-800  dark:hover:bg-gradient-to-tl border-y-green-900 transition-all duration-700  bg-neutral-200 z-10"
         >
-          <div className="gap-6">
-            <h1 className="rotate-90 mb-6 md:mb-56 top-[10%] right-[15%] text-2xl md:text-3xl lg:text-4xl font-extrabold">
-              {hero.firstName}{" "}
-              <span className="dark:text-white px-2 py-1 bg-gradient-to-r from-amber-700 via-purple-800 to-pink-700 rounded-lg text-white">
-                {hero.LastName}
-              </span>
-            </h1>
-            <h1 className="text-3xl md:block hidden font-extrabold text-center lg:-translate-y-36">
+          <div className=" space-x-6 space-y-4">
+            <h1 className=" mt-40  motion-reduce:aspect-video cursor-progress text-3xl font-extrabold text-center ">
               {hero.firstName}{" "}
               <span className="px-2 py-1">{hero.LastName}</span>
+            </h1>
+            <h1 className="mt-7 font-extrabold text-center">
+              <span className="px-2 py-1  text-4xl text-ellipsis font-extrabold rounded-lg ">
+                Full Stack
+              </span>{" "}
+              <span className="px-2 py-1 font-extrabold  text-4xl  ">
+                web Developer
+              </span>
             </h1>
           </div>
         </div>
@@ -45,15 +47,15 @@ const Hero = () => {
             {hero.title}
           </h2>
           <br />
-          <div className=" h-12 flex-col justify-end sm:block hidden bg-gradient-to-r from-amber-600 via-purple-500 to-pink-500">
+          <div className=" h-12 flex-col justify-end ">
             <Button
               gradientDuoTone="purpleToPink"
-              className="p-2 md:p-2 px-6 md:px-4  ml-44 animate-bounce"
+              className="p-2 md:p-2 px-6 md:px-4 animate-bounce"
             >
               {hero.btnText}
             </Button>
           </div>
-          <div className="flex flex-col space-y-5 lg:gap-12 mt-6">
+          <div className="flex flex-col space-y-3 lg:gap-12 mt-10">
             {hero.hero_content.map((content, i) => (
               <div
                 key={i}
@@ -66,7 +68,7 @@ const Hero = () => {
                 <h3 className="dark:text-white text-xl md:text-4xl lg:text-5xl font-extrabold">
                   {content.count}
                 </h3>
-                <p className="dark:text-white text-sm md:text-base mt-2">
+                <p className="dark:text-white md:text-base lg:text-md mt-2">
                   {content.text}
                 </p>
               </div>
