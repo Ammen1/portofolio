@@ -50,12 +50,11 @@ const ImageSlider = () => {
           key={index}
           src={image}
           alt={image}
-          className="rounded-[12px]"
+          className="rounded-[12px] w-full max-w-[500px] mx-auto absolute"
           initial="center"
           animate={positions[positionIndexes[index]]}
           variants={imageVariants}
           transition={{ duration: 0.5 }}
-          style={{ width: "40%", position: "absolute" }}
         />
       ))}
       <div className="flex flex-row gap-3">
