@@ -1,5 +1,4 @@
 import Comment from "../models/comment.model.js";
-import { errorHandler } from "../utils/error.js";
 
 export const createComment = async (req, res, next) => {
   try {
@@ -62,11 +61,12 @@ export const editComment = async (req, res, next) => {
     if (!comment) {
       return next(errorHandler(404, "Comment not found"));
     }
-    if (comment.userId != req.user.id && !req.user.isAdmin) {
+    if (comment.userId !== req.user.id && !req.user.isAdmin) {
       return next(
-        errorHandler(404, "You are not allowed to edit this comment")
+        errorHandler(403, "You are not allowed to edit this comment")
       );
     }
+
     const editedComment = await Comment.findByIdAndUpdate(
       req.params.commentId,
       {
@@ -80,31 +80,33 @@ export const editComment = async (req, res, next) => {
   }
 };
 
-export const deleteComment = async (req, rea, next) => {
+export const deleteComment = async (req, res, next) => {
   try {
     const comment = await Comment.findById(req.params.commentId);
     if (!comment) {
       return next(errorHandler(404, "Comment not found"));
     }
     if (comment.userId !== req.user.id && !req.user.isAdmin) {
-      return next(errorHandler(403, "You are allowed to delete this comment"));
+      return next(
+        errorHandler(403, "You are not allowed to delete this comment")
+      );
     }
-    await comment.findByIdAndDelete(req.params.commentId);
-    req.status(200).json("Comment has been deleted");
+    await Comment.findByIdAndDelete(req.params.commentId);
+    res.status(200).json("Comment has been deleted");
   } catch (error) {
     next(error);
   }
 };
 
 export const getcomments = async (req, res, next) => {
-  if (!req.user.isAdmin) {
-    return next(errorHandler(404, "You are not allowed to get all comments"));
-  }
+  if (!req.user.isAdmin)
+    return next(errorHandler(403, "You are not allowed to get all comments"));
   try {
-    const startIndex = parentInt(req.query.startIndex) || 0;
-    const limit = parentInt(req.query.limit) || 9;
+    const startIndex = parseInt(req.query.startIndex) || 0;
+    const limit = parseInt(req.query.limit) || 9;
     const sortDirection = req.query.sort === "desc" ? -1 : 1;
-    const comments = (await Comment.find().sort({ createdAt: sortDirection }))
+    const comments = await Comment.find()
+      .sort({ createdAt: sortDirection })
       .skip(startIndex)
       .limit(limit);
     const totalComments = await Comment.countDocuments();

@@ -1,18 +1,18 @@
 import mongoose from "mongoose";
 
-const postSchame = new mongoose.Schema(
+const postSchema = new mongoose.Schema(
   {
     userId: {
       type: String,
-      require: true,
+      required: true,
     },
     content: {
       type: String,
-      require: true,
+      required: true,
     },
     title: {
       type: String,
-      require: true,
+      required: true,
       unique: true,
     },
     image: {
@@ -26,13 +26,13 @@ const postSchame = new mongoose.Schema(
     },
     slug: {
       type: String,
-      require: true,
+      required: true,
       unique: true,
     },
   },
   { timestamps: true }
 );
 
-const Post = mongoose.model("Post", postSchame);
+const Post = mongoose.model("Post", postSchema);
 
 export default Post;
