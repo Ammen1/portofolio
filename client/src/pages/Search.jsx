@@ -131,6 +131,8 @@ export default function Search() {
               id="category"
             >
               <option value="uncategorized">Uncategorized</option>
+              <option value="django">Django</option>
+              <option value="nodejs">Node.js</option>
               <option value="reactjs">React.js</option>
               <option value="nextjs">Next.js</option>
               <option value="javascript">JavaScript</option>

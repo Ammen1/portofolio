@@ -35,30 +35,21 @@ const Skills = () => {
   }
 
   return (
-    <section className="min-h-fit" id="skills">
+    <section className="min-h-fit " id="skills">
       {/* modal */}
       <Modal
         isOpen={modalIsOpen}
         onRequestClose={closeModal}
         style={customStyles}
       >
-        <div className="flex items-center gap-2">
+        <div className="flex items-center gap-2 bg-gradient-to-r from-green-700 to-lime-600 via-emerald-500 ">
           <img className="h-10" src={selectSkill?.logo} alt="..." />
           <h6>{selectSkill?.name}</h6>
         </div>
         <br />
-        <ul className="list-decimal px-4 font-Poppins sm:text-sm text-xs !leading-7">
-          <li>Lorem ipsum dolor sit, amet consectetur adipisicing.</li>
-          <li>Lorem ipsum dolor sit, ame.</li>
-          <li>Lorem ipsum dolor sit, amet consectetur</li>
-          <li>
-            Lorem ipsum dolor sit, amet dolor sit, amet consectetur adipisicing.
-          </li>
-          <li>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ad est
-            beatae quos rem.
-          </li>
-        </ul>
+        <p className="list-decimal px-4 font-Poppins sm:text-sm text-2xl !leading-7 text-white bg-gradient-to-r from-amber-950 to-emerald-900 via-orange-900">
+          {skills.title}
+        </p>
         <br />
         <div className="flex justify-end">
           <button onClick={closeModal} className="btn">
@@ -78,15 +69,15 @@ const Skills = () => {
           {skills.subtitle}
         </h4>
         <br />
-        <div className="flex flex-wrap gap-4 justify-center">
+        <div className="flex flex-wrap gap-4  justify-center">
           {skills.skills_content.map((skill, i) => (
             <div
               key={i}
               data-aos="fade-up"
               data-aos-delay={i * 400}
-              className="bg-white sm:cursor-pointer 
+              className="sm:cursor-pointer 
                relative group w-full flex items-center
-                gap-5 p-5 max-w-sm rounded-md border-2 border-slate-200"
+                gap-5 p-5 max-w-sm rounded-md border-2 border-slate-200 bg-black"
             >
               <div>
                 <img

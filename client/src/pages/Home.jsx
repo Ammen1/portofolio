@@ -26,9 +26,6 @@ export default function Home() {
   return (
     <div className="">
       <Hero />
-      <div className="p-3 bg-amber-50 dark:bg-[#060e17]">
-        <Skills />
-      </div>
       <div className="p-3 bg-white/95 dark:bg-[#0e1216]">
         <Services />
       </div>
@@ -66,6 +63,9 @@ export default function Home() {
             </div>
           </motion.div>
         )}
+      </div>
+      <div className="p-3 bg-amber-50 dark:bg-[#060e17]">
+        <Skills />
       </div>
       <div className="p-3 bg-[#182b42]">
         <Contact />
