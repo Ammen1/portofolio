@@ -11,6 +11,14 @@ export default {
       Paprika: "Paprika",
       Inria: "Inria Serif",
     },
+    screens: {
+      xs: "480px",
+      ss: "620px",
+      sm: "768px",
+      md: "1060px",
+      lg: "1200px",
+      xl: "1700px",
+    },
     container: {
       center: true,
       padding: "4rem",
