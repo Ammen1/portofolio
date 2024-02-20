@@ -6,6 +6,7 @@ import { useSelector, useDispatch } from "react-redux";
 import { toggleTheme } from "../redux/theme/themeSlice";
 import { signoutSuccess } from "../redux/user/userSlice";
 import { useEffect, useState } from "react";
+import Resume from "../assets/images/Hero/Resume-Tamirat-Guda.pdf";
 
 export default function Header() {
   const path = useLocation().pathname;
@@ -23,6 +24,14 @@ export default function Header() {
       setSearchTerm(searchTermFromUrl);
     }
   }, [location.search]);
+
+  const downloadResume = () => {
+    const link = document.createElement("a");
+    link.href = Resume;
+    link.target = "_blank";
+    link.download = "YourResumeFileName.pdf"; // Replace with your desired filename
+    link.click();
+  };
 
   const handleSignout = async () => {
     try {
@@ -82,12 +91,8 @@ export default function Header() {
           {theme === "light" ? <FaSun /> : <FaMoon />}
         </Button>
         {currentUser ? (
-          <Button
-            gradientDuoTone="purpleToBlue"
-            outline
-            className=" sm:block hidden "
-          >
-            Hello
+          <Button gradientDuoTone="purpleToBlue" outline>
+            well come
           </Button>
         ) : (
           <Link to="/sign-in">
@@ -96,10 +101,15 @@ export default function Header() {
             </Button>
           </Link>
         )}
-
-        <Button gradientDuoTone="purpleToBlue" outline className="">
+        <Button
+          gradientDuoTone="purpleToBlue"
+          outline
+          className=""
+          onClick={downloadResume}
+        >
           Resume
         </Button>
+
         <Navbar.Toggle />
       </div>
 
