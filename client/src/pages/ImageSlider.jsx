@@ -3,8 +3,8 @@ import { motion } from "framer-motion";
 import city1 from "../assets/images/Projects/project.png";
 import city2 from "../assets/images/Projects/project.png";
 import city3 from "../assets/images/Projects/img3.png";
-import planet1 from "../assets/images/Projects/img2.png";
-import planet2 from "../assets/images/Projects/img1.png";
+import planet1 from "../assets/images/Projects/coffee.png";
+import planet2 from "../assets/images/Projects/go.png";
 import { Button } from "flowbite-react";
 
 const ImageSlider = () => {
