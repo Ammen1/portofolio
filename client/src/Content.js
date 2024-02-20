@@ -1,12 +1,19 @@
 // import images
-import Hero_person from "./assets/images/Hero/person.png";
+import Hero_person from "./assets/images/Hero/3.png";
 
-import figma from "./assets/images/Skills/figma.png";
-import sketch from "./assets/images/Skills/sketch.png";
-import ps from "./assets/images/Skills/ps.png";
 import reactjs from "./assets/images/Skills/react.png";
 import nodejs from "./assets/images/Skills/node.png";
 import python from "./assets/images/Skills/python.png";
+
+import deploye from "./assets/images/Skills/deploye.jpg";
+import docker from "./assets/images/Skills/docker.jpg";
+import js from "./assets/images/Skills/js.jpg";
+import mongo from "./assets/images/Skills/mongo.jpg";
+import kubermet from "./assets/images/Skills/kubermet.jpg";
+import ninja from "./assets/images/Skills/ninja.jpg";
+import rest1 from "./assets/images/Skills/rest1.jpg";
+import vue from "./assets/images/Skills/vue.jpg";
+import django from "./assets/images/Skills/django.jpg";
 
 import services_logo1 from "./assets/images/Services/logo1.png";
 import services_logo2 from "./assets/images/Services/logo2.png";
@@ -69,39 +76,50 @@ export const content = {
     subtitle: "MY TOP SKILLS",
     skills_content: [
       {
-        name: "Figma",
-        para: "Lorem ipsum text  dummy",
-        logo: figma,
+        name: "django",
+        para: "I have over three years of experience in Django .",
+        logo: django,
+        description:
+          "Over the past three years,I spearheaded the creation of a dynamic fashion design e-commerce website, where I meticulously crafted both the backend and frontend components.I played a pivotal role in developing a Coffee Leaf Disease Prediction website, integrating  AI models for disease forecasting while handling both backend and frontend aspects. Furthermore, my contributions extended to the development of the backend and frontend for Goderash Fuel Delivery, a mobile app facilitating fuel delivery services. Notably, I incorporated language translation features within the app to facilitate effective communication by translating local languages. These experiences have honed my skills in web development, machine learning integration.",
       },
       {
         name: "Node js",
-        para: "Lorem ipsum text  dummy",
+        para: "I have over three years of experience in Node.js.",
         logo: nodejs,
+        description:
+          "i have more then 2 years expereinces in and I spearheaded the creation of a dynamic getjobs backend at eaglelion  ",
       },
       {
-        name: "Adobe Photoshop",
-        para: "Lorem ipsum text  dummy",
-        logo: ps,
+        name: "Vue.js",
+        para: "I have over one years of experience in Node.js.",
+        logo: vue,
+        description: "",
       },
       {
-        name: "Figma",
-        para: "Lorem ipsum text  dummy",
-        logo: figma,
+        name: "docker",
+        para: "I've successfully implemented Docker for streamlined and efficient application deployment and management.",
+        logo: docker,
+        description:
+          "In my professional journey, I've successfully implemented Docker for streamlined and efficient application deployment and management. I leveraged Docker's containerization technology to encapsulate applications and their dependencies, ensuring consistency across different environments.",
       },
       {
-        name: "Node js",
-        para: "Lorem ipsum text  dummy",
-        logo: nodejs,
+        name: "Mongo",
+        para: "I've gained extensive experience in working with MongoDB, a NoSQL database",
+        logo: mongo,
+        description:
+          "I've gained extensive experience in working with MongoDB, a NoSQL database that excels in handling large volumes of unstructured or semi-structured data. I have successfully integrated MongoDB into various projects, leveraging its flexibility to store and retrieve data in a schema-less format. ",
       },
       {
-        name: "Adobe Photoshop",
-        para: "Lorem ipsum text  dummy",
-        logo: ps,
+        name: "Djnago Reat Framwork",
+        para: "I have demonstrated a strong command of Django REST Framework, a powerful tool for building robust and scalable Web APIs with the Django framework",
+        logo: rest1,
       },
       {
-        name: "Figma",
-        para: "Lorem ipsum text  dummy",
-        logo: figma,
+        name: "Kubernet",
+        para: "I have acquired substantial experience in working with Kubernetes, a powerful container orchestration platform.",
+        logo: kubermet,
+        description:
+          "I have acquired substantial experience in working with Kubernetes, a powerful container orchestration platform. I have successfully implemented and managed containerized applications using Kubernetes, leveraging its robust features for automating deployment, scaling, and management of containerized workloads. ",
       },
       {
         name: "Node js",
@@ -115,14 +133,30 @@ export const content = {
         logo: reactjs,
       },
       {
-        name: "Sketch",
-        para: "Lorem ipsum text  dummy",
-        logo: sketch,
+        name: "ninja",
+        para: "have honed my skills in utilizing the Ninja web framework.",
+        logo: ninja,
+        description:
+          " have honed my skills in utilizing the Ninja web framework. and my experience involves leveraging its capabilities to build modern and scalable web applications. I have successfully contributed to projects where Ninja's simplicity and efficiency played a crucial role.",
       },
       {
         name: "Python",
         para: "Lorem ipsum text  dummy",
         logo: python,
+      },
+      {
+        name: "deploy",
+        para: "I have demonstrated a comprehensive understanding of deployment processes.",
+        logo: deploye,
+        description:
+          "I have demonstrated a comprehensive understanding of deployment processes, ensuring the smooth transition of applications from development to production environments. I am proficient in employing various deployment strategies, including continuous integration and continuous delivery (CI/CD) pipelines, to automate and streamline the deployment lifecycle",
+      },
+      {
+        name: "JavaScripts",
+        para: "I have demonstrated a comprehensive understanding of deployment processes.",
+        logo: js,
+        description:
+          "I have demonstrated a comprehensive understanding of deployment processes, ensuring the smooth transition of applications from development to production environments. I am proficient in employing various deployment strategies, including continuous integration and continuous delivery (CI/CD) pipelines, to automate and streamline the deployment lifecycle",
       },
     ],
     icon: MdArrowForward,
@@ -133,17 +167,17 @@ export const content = {
     service_content: [
       {
         title: "Web Development",
-        para: "In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document elying on mean",
+        para: "As a full-stack developer, I seamlessly integrate both frontend and backend components, providing end-to-end solutions. This holistic approach ensures a cohesive and efficient digital ecosystem for your business.",
         logo: services_logo1,
       },
       {
         title: "ui / ux DESIGNING",
-        para: "In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document elying on mean",
+        para: "In a world where digital interactions span various devices, I prioritize responsive design principles. Your website or application will not only look exceptional on desktops but will also provide a flawless experience on tablets and smartphones. Accessibility is ingrained in every design, ensuring inclusivity for all users.",
         logo: services_logo2,
       },
       {
-        title: "PhotoShop Editing",
-        para: "In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document elying on mean",
+        title: "DTABASEGNING",
+        para: "My approach to database design begins with strategic data modeling. I meticulously analyze your business requirements to create a data model that not only reflects your current needs but is also flexible enough to accommodate future growth. Each table, relationship, and field is carefully crafted to optimize data storage and retrieval.",
         logo: services_logo3,
       },
     ],
