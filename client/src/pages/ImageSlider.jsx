@@ -1,9 +1,9 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
-import city1 from "../assets/images/Projects/img1.png";
-import city2 from "../assets/images/Projects/img2.png";
+import city1 from "../assets/images/Projects/project.png";
+import city2 from "../assets/images/Projects/project.png";
 import city3 from "../assets/images/Projects/img3.png";
-import planet1 from "../assets/images/Projects/img1.png";
+import planet1 from "../assets/images/Projects/img2.png";
 import planet2 from "../assets/images/Projects/img1.png";
 import { Button } from "flowbite-react";
 
@@ -41,7 +41,7 @@ const ImageSlider = () => {
     right1: { x: "50%", scale: 0.7, zIndex: 3 },
   };
   return (
-    <div className="flex items-center flex-col  justify-center dark:bg-black">
+    <div className="flex items-center flex-col  justify-center h-screen">
       <h2 className="text-3xl font-bold text-center mb-4  dark:text-white">
         Explore My Projects
       </h2>

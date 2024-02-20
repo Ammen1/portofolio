@@ -21,7 +21,11 @@ const Services = () => {
               className="min-w-[16rem] duration-300 cursor-pointer border-2 border-slate-200 rounded-xl text-center  p-6 flex-1 group-hover:blur-sm 
               hover:!blur-none"
             >
-              <img src={content.logo} alt="..." className="mx-auto " />
+              <img
+                src={content.logo}
+                alt="..."
+                className="mx-auto dark:bg-white rounded-md "
+              />
               <h6 className="my-3 text-xl ">{content.title}</h6>
               <p className="leading-7 ">{content.para}</p>
             </div>

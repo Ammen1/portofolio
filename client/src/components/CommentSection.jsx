@@ -1,10 +1,9 @@
-import { Alert, Button, Modal, TextInput, Textarea } from "flowbite-react";
+import { Alert, Button, Modal, Textarea } from "flowbite-react";
 import { useEffect, useState } from "react";
 import { useSelector } from "react-redux";
 import { Link, useNavigate } from "react-router-dom";
 import Comment from "./Comment";
 import { HiOutlineExclamationCircle } from "react-icons/hi";
-import { editComment } from "../../../api/controllers/comment.controller";
 
 export default function CommentSection({ postId }) {
   const { currentUser } = useSelector((state) => state.user);
@@ -14,7 +13,6 @@ export default function CommentSection({ postId }) {
   const [showModal, setShowModal] = useState(false);
   const [commentToDelete, setCommentToDelete] = useState(null);
   const navigate = useNavigate();
-
   const handleSubmit = async (e) => {
     e.preventDefault();
     if (comment.length > 200) {
@@ -64,7 +62,9 @@ export default function CommentSection({ postId }) {
         navigate("/sign-in");
         return;
       }
-      const res = await fetch(`/api/comment/likeComment/${commentId}`, {});
+      const res = await fetch(`/api/comment/likeComment/${commentId}`, {
+        method: "PUT",
+      });
       if (res.ok) {
         const data = await res.json();
         setComments(
@@ -99,18 +99,17 @@ export default function CommentSection({ postId }) {
         navigate("/sign-in");
         return;
       }
-      const res = await fetch(`/api/comment/deteleComment/${commentId}`, {
+      const res = await fetch(`/api/comment/deleteComment/${commentId}`, {
         method: "DELETE",
       });
       if (res.ok) {
         const data = await res.json();
-        setComment(comments.filter((comment) => comment._id !== commentId));
+        setComments(comments.filter((comment) => comment._id !== commentId));
       }
     } catch (error) {
       console.log(error.message);
     }
   };
-
   return (
     <div className="max-w-2xl mx-auto w-full p-3">
       {currentUser ? (
