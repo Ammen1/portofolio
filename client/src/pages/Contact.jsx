@@ -36,15 +36,12 @@ const Contact = () => {
 
   return (
     <div
-      className=" text-white  sm:flex-row p-3 px-5 py-5 border-teal-500 justify-center items-center rounded-tl-3xl rounded-br-3xl "
+      className=" sm:flex-row p-3 px-5 py-5 border-teal-500 justify-center items-center rounded-tl-3xl rounded-br-3xl "
       id="contact"
     >
       <Toaster />
       <div className="md:container px-5 py-8 ">
-        <h2
-          className="title text-2xl font-bold text-white"
-          data-aos="fade-down"
-        >
+        <h2 className="title text-2xl font-bold" data-aos="fade-down">
           <span className="">{Contact.title}</span>
         </h2>
         <h4 className=" text-2xl font-serif" data-aos="fade-down">
