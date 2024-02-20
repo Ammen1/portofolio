@@ -3,7 +3,6 @@ import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import PostCard from "../components/PostCard";
 import Hero from "../components/Hero";
-import Contact from "./Contact";
 import Navbar from "./Navbar";
 import Services from "./Services";
 import Skills from "./Skills";
@@ -68,9 +67,6 @@ export default function Home() {
       </div>
       <div className="p-3 bg-amber-50 dark:bg-[#060e17]">
         <Skills />
-      </div>
-      <div className="p-3 bg-[#182b42]">
-        <Contact />
       </div>
 
       <div>
