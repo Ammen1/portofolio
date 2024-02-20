@@ -1,4 +1,5 @@
 import { Button } from "flowbite-react";
+import go from "../assets/images/Projects/go.png";
 
 export default function CallToAction() {
   return (
@@ -13,16 +14,20 @@ export default function CallToAction() {
           className="rounded-tl-xl rounded-bl-none"
         >
           <a
-            href="https://github.com/ammen1"
+            href="http://gooderash.com/"
             target="_blank"
             rel="noopener noreferrer"
           >
-            100 JavaScript Projects
+            Goderash Fuel Delivery Web it is under developement
           </a>
         </Button>
       </div>
       <div className="p-7 flex-1">
-        <img src="https://bairesdev.mo.cloudinary.net/blog/2023/08/What-Is-JavaScript-Used-For.jpg" />
+        <img
+          src={go}
+          alt="Image Description"
+          className="object-cover w-auto h-auto rounded-lg shadow-md"
+        />
       </div>
     </div>
   );
