@@ -37,6 +37,9 @@ app.use(cookieParser());
 app.listen(3000, () => {
   console.log('Server is running on port 3000!');
 });
+app.get( '/' , (res, req) => {
+  res.send("Hello amen")
+})
 
 app.use('/api/user', userRoutes);
 app.use('/api/auth', authRoutes);
