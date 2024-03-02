@@ -6,7 +6,7 @@ export default defineConfig({
   server: {
     proxy: {
       "/api": {
-        target: "http://localhost:3000",
+        target: "portofolio-backend-nine.vercel.app",
         secure: false,
       },
     },

@@ -25,7 +25,7 @@ const app = express();
 
 app.use(cors(
   {
-    origin: [""],
+    origin: ["portofolio-backend-nine.vercel.app"],
     methods: ["POST", "GET"],
     credentials: true
   }
