@@ -1,13 +1,11 @@
 {
-
     "version": 2,
     "builds": [
-        { "src": "*.js", "use": "@vercel/node" }
+      { "src": "package.json", "use": "@vercel/node" },
+      { "src": "public/**/*", "use": "@vercel/static" }
     ],
-    "router" : [
-        {
-            "src": "/(.*)",
-            "dest": "/"
-        }
+    "routes": [
+      { "src": "/.*", "dest": "/index.html" }
     ]
-}
+  }
+  
