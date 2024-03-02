@@ -25,7 +25,7 @@ const app = express();
 
 app.use(cors(
   {
-    origin: [ "https://protofolio-alpha.vercel.app/" ],
+    origin: [ "" ],
     methods: [ "POST",  "GET" ],
     Credential: true
   }
