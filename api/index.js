@@ -23,6 +23,14 @@ const __dirname = path.resolve();
 
 const app = express();
 
+app.use(cors(
+  {
+    origin: [ "https://protofolio-alpha.vercel.app/" ],
+    methods: [ "POST",  "GET" ],
+    Credential: true
+  }
+));
+
 app.use(express.json());
 app.use(cookieParser());
 
