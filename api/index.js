@@ -21,7 +21,7 @@ const PORT = process.env.PORT || 3000;
 const app = express();
 
 app.use(cors({
-  origin: ["https://portofolio-api-silk.vercel.app"],
+  origin: ["tamirat-tamirat-5a0d5606.vercel.app"],
   methods: ["POST", "GET"],
   credentials: true,
 }));
