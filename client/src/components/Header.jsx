@@ -90,17 +90,7 @@ export default function Header() {
         >
           {theme === "light" ? <FaSun /> : <FaMoon />}
         </Button>
-        {currentUser ? (
-          <Button gradientDuoTone="purpleToBlue" outline>
-            well come
-          </Button>
-        ) : (
-          <Link to="/sign-in">
-            <Button gradientDuoTone="purpleToBlue" outline>
-              Sign In
-            </Button>
-          </Link>
-        )}
+       
         <Button
           gradientDuoTone="purpleToBlue"
           outline
