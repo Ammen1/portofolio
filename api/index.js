@@ -25,12 +25,11 @@ const app = express();
 
 app.use(cors(
   {
-    origin: ["portofolio-backend-nine.vercel.app"],
-    methods: ["POST", "GET"],
-    credentials: true
+    origin: [ "" ],
+    methods: [ "POST",  "GET" ],
+    Credential: true
   }
 ));
-
 
 app.use(express.json());
 app.use(cookieParser());
