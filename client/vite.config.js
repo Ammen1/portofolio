@@ -6,7 +6,7 @@ export default defineConfig({
   server: {
     proxy: {
       "/api": {
-        target: "https://tamirat.vercel.app/",
+        target: "https://tamirat-tamirat-5a0d5606.vercel.app",
         secure: false,
       },
     },
