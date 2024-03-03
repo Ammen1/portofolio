@@ -6,9 +6,14 @@ export default defineConfig({
   server: {
     proxy: {
       "/api": {
-        target: "portofolio-backend-nine.vercel.app",
+        target: "portofolio-api-silk.vercel.app",
         secure: false,
       },
+    },
+  },
+  build: {
+    rollupOptions: {
+      external: ['mongoose'],
     },
   },
   plugins: [react()],

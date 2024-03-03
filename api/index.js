@@ -25,7 +25,7 @@ const app = express();
 
 app.use(cors(
   {
-    origin: [ "" ],
+    origin: [ "portofolio-api-silk.vercel.app" ],
     methods: [ "POST",  "GET" ],
     Credential: true
   }
