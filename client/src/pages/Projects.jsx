@@ -1,5 +1,6 @@
 import CallToAction from "../components/CallToAction";
 import PostCard from "../components/PostCard";
+import ImageSlider from "./ImageSlider";
 
 export default function Projects() {
   return (
@@ -26,6 +27,7 @@ export default function Projects() {
         />
       </div>
       <CallToAction />
+      <ImageSlider />
     </div>
   );
 }
