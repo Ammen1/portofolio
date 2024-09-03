@@ -1,14 +1,15 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
 import city1 from "../assets/images/Projects/project.png";
-import city2 from "../assets/images/Projects/project.png";
+import city2 from "../assets/images/Projects/coffeedesh.png";
 import city3 from "../assets/images/Projects/img3.png";
+import ima1 from "../assets/images/Projects/img1.png";
 import planet1 from "../assets/images/Projects/coffee.png";
 import planet2 from "../assets/images/Projects/go.png";
 import { Button } from "flowbite-react";
 
 const ImageSlider = () => {
-  const [positionIndexes, setPositionIndexes] = useState([0, 1, 2, 3, 4]);
+  const [positionIndexes, setPositionIndexes] = useState([0, 1, 2, 3, 4, 5]);
 
   const handleNext = () => {
     setPositionIndexes((prevIndexes) => {
@@ -22,16 +23,16 @@ const ImageSlider = () => {
   const handleBack = () => {
     setPositionIndexes((prevIndexes) => {
       const updatedIndexes = prevIndexes.map(
-        (prevIndex) => (prevIndex + 4) % 5
+        (prevIndex) => (prevIndex + 5) % 6
       );
 
       return updatedIndexes;
     });
   };
 
-  const images = [city1, city2, city3, planet1, planet2];
+  const images = [city1, city2, city3, planet1, planet2, ima1 ];
 
-  const positions = ["center", "left1", "left", "right", "right1"];
+  const positions = ["center", "left1", "left", "right", "right1", ];
 
   const imageVariants = {
     center: { x: "0%", scale: 1, zIndex: 5 },
@@ -58,13 +59,13 @@ const ImageSlider = () => {
         />
       ))}
       <div className="flex flex-row gap-3">
-        <Button
+        {/* <Button
           className="text-white mt-[400px] bg-indigo-400 rounded-md py-2 px-4"
           onClick={handleBack}
           gradientDuoTone="purpleToPink"
         >
           Back
-        </Button>
+        </Button> */}
         <Button
           className="text-white mt-[400px] bg-gradient-to-r via-orange-400 to-orange-800 bg-indigo-400 rounded-md py-2 px-4"
           onClick={handleNext}

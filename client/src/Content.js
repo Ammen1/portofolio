@@ -1,4 +1,3 @@
-// import images
 import Hero_person from "./assets/images/Hero/3.png";
 
 import reactjs from "./assets/images/Skills/react.png";
@@ -56,8 +55,8 @@ export const content = {
   ],
   hero: {
     title: "Web Developer",
-    firstName: "Amen",
-    LastName: "Abush",
+    firstName: "Tamirat",
+    LastName: " Guda",
     btnText: "Telegratm",
     image: Hero_person,
     hero_content: [
@@ -76,91 +75,100 @@ export const content = {
     subtitle: "MY TOP SKILLS",
     skills_content: [
       {
-        name: "django",
-        para: "I have over three years of experience in Django .",
+        name: "Django",
+        para: "I have over three years of experience in Django.",
         logo: django,
         description:
-          "Over the past three years,I spearheaded the creation of a dynamic fashion design e-commerce website, where I meticulously crafted both the backend and frontend components.I played a pivotal role in developing a Coffee Leaf Disease Prediction website, integrating  AI models for disease forecasting while handling both backend and frontend aspects. Furthermore, my contributions extended to the development of the backend and frontend for Goderash Fuel Delivery, a mobile app facilitating fuel delivery services. Notably, I incorporated language translation features within the app to facilitate effective communication by translating local languages. These experiences have honed my skills in web development, machine learning integration.",
+          "I led the development of a fashion design e-commerce site, a Coffee Leaf Disease Prediction platform, and a fuel delivery app with language translation, mastering both backend and frontend aspects.",
       },
       {
-        name: "Node js",
+        name: "Node.js",
         para: "I have over three years of experience in Node.js.",
         logo: nodejs,
         description:
-          "i have more then 2 years expereinces in and I spearheaded the creation of a dynamic getjobs backend at eaglelion  ",
+          "I spearheaded the backend creation for a dynamic job platform at EagleLion, focusing on scalability and performance over two years.",
       },
       {
         name: "Vue.js",
-        para: "I have over one years of experience in Node.js.",
+        para: "I have over one year of experience in Vue.js.",
         logo: vue,
-        description: "",
+        description:
+          "I have built dynamic and responsive user interfaces with Vue.js, leveraging its component-based architecture.",
       },
       {
-        name: "docker",
-        para: "I've successfully implemented Docker for streamlined and efficient application deployment and management.",
+        name: "Docker",
+        para: "I have successfully implemented Docker for efficient deployment.",
         logo: docker,
         description:
-          "In my professional journey, I've successfully implemented Docker for streamlined and efficient application deployment and management. I leveraged Docker's containerization technology to encapsulate applications and their dependencies, ensuring consistency across different environments.",
+          "I utilized Docker's containerization to ensure consistent application deployment across various environments.",
       },
       {
-        name: "Mongo",
-        para: "I've gained extensive experience in working with MongoDB, a NoSQL database",
+        name: "MongoDB",
+        para: "I have extensive experience with MongoDB, a NoSQL database.",
         logo: mongo,
         description:
-          "I've gained extensive experience in working with MongoDB, a NoSQL database that excels in handling large volumes of unstructured or semi-structured data. I have successfully integrated MongoDB into various projects, leveraging its flexibility to store and retrieve data in a schema-less format. ",
+          "I integrated MongoDB into various projects, leveraging its flexibility to manage large volumes of unstructured data.",
       },
       {
-        name: "Djnago Reat Framwork",
-        para: "I have demonstrated a strong command of Django REST Framework, a powerful tool for building robust and scalable Web APIs with the Django framework",
+        name: "Django REST Framework",
+        para: "I have strong command of Django REST Framework.",
         logo: rest1,
+        description:
+          "I built scalable web APIs, integrating them seamlessly with Django for efficient data handling.",
       },
       {
-        name: "Kubernet",
-        para: "I have acquired substantial experience in working with Kubernetes, a powerful container orchestration platform.",
+        name: "Kubernetes",
+        para: "I have experience in managing containerized apps with Kubernetes.",
         logo: kubermet,
         description:
-          "I have acquired substantial experience in working with Kubernetes, a powerful container orchestration platform. I have successfully implemented and managed containerized applications using Kubernetes, leveraging its robust features for automating deployment, scaling, and management of containerized workloads. ",
+          "I implemented Kubernetes for automating deployment, scaling, and management of containerized workloads.",
       },
       {
-        name: "Node js",
-        para: "Lorem ipsum text  dummy",
+        name: "Node.js",
+        para: "Node.js powers scalable server-side apps with high performance.",
         logo: nodejs,
+        description:
+          "I used Node.js to build APIs, real-time apps, and microservices, leveraging its non-blocking I/O for efficiency.",
       },
-
       {
-        name: "React js",
-        para: "Lorem ipsum text  dummy",
+        name: "React.js",
+        para: "I have experience building dynamic UIs with React.js.",
         logo: reactjs,
+        description:
+          "React's component-based architecture allows me to create reusable UI elements for scalable development.",
       },
       {
-        name: "ninja",
-        para: "have honed my skills in utilizing the Ninja web framework.",
+        name: "Ninja Framework",
+        para: "I have honed my skills in the Ninja web framework.",
         logo: ninja,
         description:
-          " have honed my skills in utilizing the Ninja web framework. and my experience involves leveraging its capabilities to build modern and scalable web applications. I have successfully contributed to projects where Ninja's simplicity and efficiency played a crucial role.",
+          "I used Ninja to build modern, scalable web applications, contributing to projects where its efficiency was crucial.",
       },
       {
         name: "Python",
-        para: "Lorem ipsum text  dummy",
+        para: "Python is a versatile language for web development and more.",
         logo: python,
+        description:
+          "I use Python for rapid development in web, data science, and automation, leveraging its extensive libraries.",
       },
       {
-        name: "deploy",
-        para: "I have demonstrated a comprehensive understanding of deployment processes.",
+        name: "Deployment",
+        para: "I have a comprehensive understanding of deployment processes.",
         logo: deploye,
         description:
-          "I have demonstrated a comprehensive understanding of deployment processes, ensuring the smooth transition of applications from development to production environments. I am proficient in employing various deployment strategies, including continuous integration and continuous delivery (CI/CD) pipelines, to automate and streamline the deployment lifecycle",
+          "I ensure smooth app transitions from development to production with CI/CD pipelines for automated deployment.",
       },
       {
-        name: "JavaScripts",
-        para: "I have demonstrated a comprehensive understanding of deployment processes.",
+        name: "JavaScript",
+        para: "JavaScript is essential for dynamic web development.",
         logo: js,
         description:
-          "I have demonstrated a comprehensive understanding of deployment processes, ensuring the smooth transition of applications from development to production environments. I am proficient in employing various deployment strategies, including continuous integration and continuous delivery (CI/CD) pipelines, to automate and streamline the deployment lifecycle",
+          "I use JavaScript for creating interactive, responsive web applications, mastering both frontend and backend uses.",
       },
     ],
     icon: MdArrowForward,
   },
+  
   services: {
     title: "Services",
     subtitle: "WHAT I OFFER",

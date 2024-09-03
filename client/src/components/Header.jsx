@@ -29,7 +29,7 @@ export default function Header() {
     const link = document.createElement("a");
     link.href = Resume;
     link.target = "_blank";
-    link.download = "YourResumeFileName.pdf"; // Replace with your desired filename
+    link.download = "YourResumeFileName.pdf"; 
     link.click();
   };
 
@@ -68,7 +68,7 @@ export default function Header() {
           <span className=" text-pretty">amirat</span>
         </h1>
       </Link>
-      <form onSubmit={handleSubmit}>
+      {/* <form onSubmit={handleSubmit}>
         <TextInput
           type="text"
           placeholder="Search..."
@@ -77,7 +77,7 @@ export default function Header() {
           value={searchTerm}
           onChange={(e) => setSearchTerm(e.target.value)}
         />
-      </form>
+      </form> */}
       <Button className="w-12 h-10 lg:hidden sm:block hidden" color="gray" pill>
         <AiOutlineSearch />
       </Button>

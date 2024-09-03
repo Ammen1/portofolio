@@ -6,12 +6,12 @@ const Hero = () => {
 
   return (
     <section className=" overflow-hidden">
-      <div className="min-h-screen relative animate-pulse flex md:flex-row flex-col-reverse md:items-end justify-center items-center">
+      <div className="min-h-screen relative flex md:flex-row flex-col-reverse md:items-end justify-center items-center">
         {/* First Column */}
         <div
           data-aos="slide-left"
           data-aos-delay="1200"
-          className="absolute h-full animate-pulse md:w-4/12 w-8/12 top-0 right-0 dark:bg-gradient-to-tr from-indigo-800  to-violet-800 via-sky-800  dark:hover:bg-gradient-to-tl border-y-green-900 transition-all duration-700  bg-neutral-200 z-10"
+          className="absolute h-full  md:w-4/12 w-8/12 top-0 right-0 dark:bg-gradient-to-tr from-indigo-800  to-violet-800 via-sky-800  dark:hover:bg-gradient-to-tl border-y-green-900 transition-all duration-700  bg-neutral-200 z-10"
         >
           <div className=" space-x-6 space-y-4">
             <h1 className=" mt-40  motion-reduce:aspect-video cursor-progress text-3xl font-extrabold text-center ">

@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
-import PostCard from "../components/PostCard";
+import PostCard from "../components/PostProject";
 import Hero from "../components/Hero";
 import Navbar from "./Navbar";
 import Services from "./Services";
@@ -55,12 +55,6 @@ export default function Home() {
                   <PostCard key={post._id} post={post} />
                 ))}
               </div>
-              <Link
-                to={"/search"}
-                className="text-lg text-teal-500 hover:underline text-center mt-4 block"
-              >
-                View All Posts
-              </Link>
             </div>
           </motion.div>
         )}
