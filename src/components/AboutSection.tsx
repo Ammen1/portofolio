@@ -100,7 +100,7 @@ const AboutSection = () => {
   ];
 
   return (
-    <section id="about" className="py-24 bg-gradient-to-br from-background via-muted/20 to-background relative overflow-hidden">
+    <section id="about" className="py-16 md:py-24 bg-gradient-to-br from-background via-muted/20 to-background relative overflow-hidden">
       {/* Background decoration */}
       <div className="absolute inset-0 bg-grid-pattern opacity-[0.02]"></div>
       <div className="absolute top-20 right-20 w-72 h-72 bg-primary/5 rounded-full blur-3xl"></div>
@@ -109,12 +109,12 @@ const AboutSection = () => {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative">
 
         {/* Section Header */}
-        <div className="text-center mb-20">
+        <div className="text-center mb-12 md:mb-20">
           <div className="inline-flex items-center space-x-3 bg-gradient-to-r from-primary/10 to-secondary/10 border border-primary/20 rounded-full px-6 py-3 shadow-sm mb-6">
             <Users className="h-5 w-5 text-primary" />
             <span className="text-muted-foreground font-semibold">About Tamirat (Ethan) Guda Ali</span>
           </div>
-          <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-4">
+          <h2 className="text-2xl sm:text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-4">
             Engineering{' '}
             <span className="bg-gradient-to-r from-primary via-primary/80 to-secondary bg-clip-text text-transparent relative">
               Financial
@@ -130,7 +130,7 @@ const AboutSection = () => {
         </div>
 
         {/* Professional Summary */}
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start mb-20">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16 items-start mb-12 md:mb-20">
           {/* Left: Summary & Interests */}
           <div className="space-y-8">
             <div className="space-y-6 text-muted-foreground leading-relaxed">
@@ -260,7 +260,7 @@ const AboutSection = () => {
         </div>
 
         {/* Highlights Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6">
           {highlights.map((highlight, index) => (
             <Card key={index} className="group bg-gradient-to-br from-card/80 to-card/60 backdrop-blur-sm border-border/50 hover:border-primary/30 hover:shadow-xl hover:shadow-primary/10 transition-all duration-500 hover:-translate-y-1">
               <CardContent className="p-6">

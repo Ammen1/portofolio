@@ -186,18 +186,19 @@ const ProjectsSection = () => {
         </div>
 
         {/* Private projects callout */}
-        <div className="bg-gradient-to-r from-muted/50 to-muted/30 border border-border rounded-3xl p-8 mb-8">
-          <div className="flex items-start space-x-4">
-            <div className="p-3 bg-muted rounded-xl flex-shrink-0">
+        <div className="bg-gradient-to-r from-muted/50 to-muted/30 border border-border rounded-3xl p-5 sm:p-8 mb-8">
+          <div className="flex flex-col sm:flex-row sm:items-start sm:space-x-4 gap-4 sm:gap-0">
+            <div className="p-3 bg-muted rounded-xl flex-shrink-0 w-fit">
               <Building2 className="h-6 w-6 text-muted-foreground" />
             </div>
-            <div>
-              <h3 className="font-bold text-lg text-foreground mb-2">Additional Private Enterprise Projects</h3>
+            <div className="text-left">
+              <h3 className="font-bold text-base sm:text-lg text-foreground mb-2">Additional Private Enterprise Projects</h3>
               <p className="text-muted-foreground text-sm leading-relaxed mb-3">
                 Also worked on multiple confidential enterprise and fintech systems under NDA:
               </p>
               <div className="flex flex-wrap gap-2">
-                {["Payment Processing", "Banking Integrations", "Wallet Systems", "Merchant Platforms",
+                {[
+                  "Payment Processing", "Banking Integrations", "Wallet Systems", "Merchant Platforms",
                   "Financial Dashboards", "Transaction Monitoring", "API Gateway Services", "High-Volume Distributed Systems"
                 ].map((item) => (
                   <Badge key={item} variant="secondary" className="text-xs">

@@ -76,7 +76,7 @@ const SkillsSection = () => {
 
 
   return (
-    <section id="skills" className="py-24 bg-background relative overflow-hidden">
+    <section id="skills" className="py-16 md:py-24 bg-background relative overflow-hidden">
       {/* Background decoration */}
       <div className="absolute top-0 left-0 w-full h-full overflow-hidden pointer-events-none">
         <div className="absolute top-40 left-10 w-64 h-64 bg-primary/3 rounded-full blur-3xl"></div>
@@ -89,7 +89,7 @@ const SkillsSection = () => {
             <Cpu className="h-4 w-4 text-primary" />
             <span className="text-muted-foreground font-medium">Technical Expertise</span>
           </div>
-          <h2 className="text-4xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-foreground to-muted-foreground bg-clip-text text-transparent">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-foreground to-muted-foreground bg-clip-text text-transparent">
             Technical <span className="gradient-text">Skills</span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
@@ -98,7 +98,7 @@ const SkillsSection = () => {
         </div>
 
         {/* Proficiency bars */}
-        <div className="bg-card/50 backdrop-blur-sm border border-border/50 rounded-3xl p-8 mb-12 max-w-4xl mx-auto">
+        <div className="bg-card/50 backdrop-blur-sm border border-border/50 rounded-3xl p-5 sm:p-8 mb-8 md:mb-12 max-w-4xl mx-auto">
           <h3 className="font-bold text-lg text-foreground mb-6 flex items-center space-x-2">
             <Zap className="h-5 w-5 text-primary" />
             <span>Core Proficiencies</span>
@@ -121,7 +121,7 @@ const SkillsSection = () => {
         </div>
 
         {/* Skills grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6">
           {skillCategories.map((category) => (
             <Card
               key={category.title}
@@ -158,19 +158,19 @@ const SkillsSection = () => {
         </div>
 
         {/* Relevant Experience Callout */}
-        <div className="mt-12 bg-gradient-to-r from-primary/5 via-primary/10 to-secondary/5 border border-primary/20 rounded-3xl p-8">
-          <div className="flex items-start space-x-4">
-            <div className="p-3 bg-primary/10 rounded-xl flex-shrink-0">
+        <div className="mt-12 bg-gradient-to-r from-primary/5 via-primary/10 to-secondary/5 border border-primary/20 rounded-3xl p-5 sm:p-8">
+          <div className="flex flex-col sm:flex-row sm:items-start sm:space-x-4 gap-4 sm:gap-0">
+            <div className="p-3 bg-primary/10 rounded-xl flex-shrink-0 w-fit">
               <Shield className="h-6 w-6 text-primary" />
             </div>
-            <div>
-              <h3 className="font-bold text-xl text-foreground mb-3">Distributed Systems Expertise</h3>
-              <div className="space-y-2 text-muted-foreground text-sm leading-relaxed">
+            <div className="text-left">
+              <h3 className="font-bold text-lg sm:text-xl text-foreground mb-3">Distributed Systems Expertise</h3>
+              <div className="space-y-3 text-muted-foreground text-sm leading-relaxed">
                 <p>
-                  <span className="font-semibold text-foreground">Saga Pattern Implementation:</span> Implemented Saga-based transaction workflows in the Ethiopay project to ensure reliable distributed transaction coordination across multiple financial services and integrations.
+                  <span className="font-semibold text-foreground">Saga Pattern Implementation:</span>{' '}Implemented Saga-based transaction workflows in the Ethiopay project to ensure reliable distributed transaction coordination across multiple financial services and integrations.
                 </p>
                 <p>
-                  <span className="font-semibold text-foreground">Fault Tolerance:</span> Designed resilient backend services with rollback and compensation mechanisms for payment consistency and fault tolerance across high-volume distributed systems.
+                  <span className="font-semibold text-foreground">Fault Tolerance:</span>{' '}Designed resilient backend services with rollback and compensation mechanisms for payment consistency and fault tolerance across high-volume distributed systems.
                 </p>
               </div>
             </div>
