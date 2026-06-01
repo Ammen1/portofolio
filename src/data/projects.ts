@@ -15,32 +15,6 @@ export interface Project {
 
 export const staticProjects: Project[] = [
   {
-    id: "payflow",
-    title: "PayFlow — Distributed Payment Processing Platform",
-    description:
-      "Production-grade, high-throughput fintech backend inspired by Stripe, engineered in Go with gRPC, Kafka event streaming, and double-spend protection.",
-    longDescription:
-      "A distributed, highly-scalable payment gateway ecosystem built with Go 1.22 and organized as a microservices workspace. Features a custom API Gateway reverse proxy with sliding-window rate limiting. Implements eight microservices coordinating over gRPC (auth, user, merchant, payment, wallet, fee, transaction, notification). Employs Kafka event-driven architecture with Dead-Letter Queues (DLQ) for reliable processing, PostgreSQL row-level locks (SELECT FOR UPDATE) to prevent double-spending in ledger writes, Redis sliding-window idempotency caching, custom circuit breakers, and complex multi-layered fee calculations (tiered discounts, custom merchant overrides, and local taxes). Fully observable via Prometheus, Grafana, and Jaeger distributed tracing.",
-    tech_stack: [
-      "Go (Golang)",
-      "Kafka",
-      "gRPC",
-      "PostgreSQL",
-      "Redis",
-      "Kubernetes",
-      "Prometheus & Grafana",
-      "Jaeger",
-    ],
-    github_url: "https://github.com/Ammen1/pay-flow-distributed-payments",
-    live_url: null,
-    play_store_url: null,
-    is_featured: true,
-    category: "Fintech",
-    impact:
-      "High-volume distributed processing, zero-double-spend guarantees, 24h idempotency caches, and full tracing observability.",
-    status: "completed",
-  },
-  {
     id: "1",
     title: "StarPay Ethiopia",
     description:
@@ -188,6 +162,32 @@ export const staticProjects: Project[] = [
     is_featured: false,
     category: "Personal Project",
     impact: "Demonstrating Go & clean architecture",
+    status: "completed",
+  },
+  {
+    id: "payflow",
+    title: "PayFlow — Distributed Payment Processing Platform",
+    description:
+      "Production-grade, high-throughput fintech backend inspired by Stripe, engineered in Go with gRPC, Kafka event streaming, and double-spend protection.",
+    longDescription:
+      "A distributed, highly-scalable payment gateway ecosystem built with Go 1.22 and organized as a microservices workspace. Features a custom API Gateway reverse proxy with sliding-window rate limiting. Implements eight microservices coordinating over gRPC (auth, user, merchant, payment, wallet, fee, transaction, notification). Employs Kafka event-driven architecture with Dead-Letter Queues (DLQ) for reliable processing, PostgreSQL row-level locks (SELECT FOR UPDATE) to prevent double-spending in ledger writes, Redis sliding-window idempotency caching, custom circuit breakers, and complex multi-layered fee calculations (tiered discounts, custom merchant overrides, and local taxes). Fully observable via Prometheus, Grafana, and Jaeger distributed tracing.",
+    tech_stack: [
+      "Go (Golang)",
+      "Kafka",
+      "gRPC",
+      "PostgreSQL",
+      "Redis",
+      "Kubernetes",
+      "Prometheus & Grafana",
+      "Jaeger",
+    ],
+    github_url: "https://github.com/Ammen1/pay-flow-distributed-payments",
+    live_url: null,
+    play_store_url: null,
+    is_featured: true,
+    category: "Fintech",
+    impact:
+      "High-volume distributed processing, zero-double-spend guarantees, 24h idempotency caches, and full tracing observability.",
     status: "completed",
   },
 ];

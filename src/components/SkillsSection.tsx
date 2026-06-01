@@ -74,6 +74,7 @@ const SkillsSection = () => {
     { label: "Distributed Systems", level: 92 },
   ];
 
+
   return (
     <section id="skills" className="py-24 bg-background relative overflow-hidden">
       {/* Background decoration */}
@@ -105,9 +106,8 @@ const SkillsSection = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
             {featuredSkills.map((skill, i) => (
               <div key={i}>
-                <div className="flex justify-between mb-1.5">
+                <div className="mb-1.5">
                   <span className="text-sm font-medium text-foreground">{skill.label}</span>
-                  <span className="text-sm text-primary font-semibold">{skill.level}%</span>
                 </div>
                 <div className="w-full bg-muted rounded-full h-2">
                   <div

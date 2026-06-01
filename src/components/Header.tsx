@@ -18,7 +18,7 @@ const Header = () => {
       
       // Only update active section if we're on the home page
       if (location.pathname === '/') {
-        const sections = ['about', 'skills', 'projects', 'blog', 'community', 'contact'];
+        const sections = ['about', 'skills', 'projects', 'community', 'contact'];
         
         // Find which section is currently in view
         let currentSection = '';
@@ -53,7 +53,6 @@ const Header = () => {
     { label: 'About', href: '#about', type: 'section' },
     { label: 'Skills', href: '#skills', type: 'section' },
     { label: 'Projects', href: '#projects', type: 'section' },
-    { label: 'Blog', href: '#blog', type: 'section' },
     { label: 'Community', href: '#community', type: 'section' },
     { label: 'Contact', href: '/contact', type: 'page' },
   ];

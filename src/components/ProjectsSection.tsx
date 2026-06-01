@@ -111,7 +111,7 @@ const ProjectsSection = () => {
                   {project.play_store_url && (
                     <Button size="sm" variant={project.live_url ? "outline" : "default"} className="flex-1 text-xs" asChild>
                       <a href={project.play_store_url} target="_blank" rel="noopener noreferrer">
-                        <Smartphone className="h-3 w-3 mr-1" /> Play Store
+                        <Smartphone className="h-3 w-3 mr-1" /> Get App
                       </a>
                     </Button>
                   )}
